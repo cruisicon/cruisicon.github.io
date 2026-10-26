@@ -845,6 +845,110 @@ footer {
     box-shadow: 0 12px 40px rgba(148, 28, 36, 0.2);
 }
 
+/* National Cyber League */
+
+#ncl .ncl-intro {
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+#ncl .ncl-results {
+    background: linear-gradient(135deg, #211820, #151219);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--crimson-light);
+    border-radius: 16px;
+    padding: 36px;
+}
+
+#ncl .ncl-ranking {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--border);
+}
+
+#ncl .ncl-eyebrow {
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#ncl .ncl-ranking strong {
+    color: var(--gold);
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    line-height: 1.2;
+}
+
+#ncl .ncl-ranking small {
+    color: var(--muted);
+    font-size: 0.45em;
+}
+
+#ncl .ncl-highlight {
+    color: var(--crimson-light);
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+#ncl .ncl-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin: 28px 0;
+}
+
+#ncl .ncl-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+#ncl .ncl-stat strong {
+    color: var(--gold);
+    font-size: 1.8rem;
+}
+
+#ncl .ncl-stat span {
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+#ncl .ncl-highlights h3 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+#ncl .ncl-highlights p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+    #ncl .ncl-results {
+        padding: 24px;
+    }
+
+    #ncl .ncl-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #ncl .ncl-stat {
+        padding: 16px;
+    }
+
+    #ncl .ncl-stat strong {
+        font-size: 1.5rem;
+    }
+}
+
+
 @media (max-width: 600px) {
     #projects .project-grid {
         grid-template-columns: 1fr;
@@ -862,4 +966,234 @@ footer {
 
 #about > p:last-child {
     margin-bottom: 0;
+}
+
+
+/* NCL competition scorecard */
+#ncl .ncl-scorecard {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 32px;
+}
+#ncl .section-label {
+    color: var(--gold);
+    font-weight: 700;
+    font-size: .85rem;
+    letter-spacing: .4px;
+    margin-bottom: 16px;
+}
+#ncl h2 { margin-bottom: 10px; }
+#ncl .ncl-subtitle { color: var(--muted); margin-bottom: 18px; }
+#ncl .ncl-summary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+}
+#ncl .ncl-metric {
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px;
+    min-width: 0;
+}
+#ncl .ncl-metric strong {
+    display: block;
+    color: var(--gold);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    line-height: 1.2;
+}
+#ncl .ncl-metric span { color: var(--muted); font-size: .95rem; }
+#ncl .ncl-performance {
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
+}
+#ncl .ncl-performance h3 { margin-bottom: 12px; }
+#ncl .ncl-progress { margin-bottom: 12px; }
+#ncl .ncl-progress-label {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+#ncl .ncl-progress-label span:last-child { color: var(--text); white-space: nowrap; }
+#ncl .ncl-track {
+    background: var(--purple);
+    height: 10px;
+    border-radius: 999px;
+    overflow: hidden;
+}
+#ncl .ncl-fill {
+    height: 100%;
+    background: var(--crimson-light);
+    border-radius: inherit;
+}
+#ncl .ncl-footnote { color: var(--muted); margin-top: 20px; font-size: .9rem; }
+@media (max-width: 600px) {
+    #ncl .ncl-scorecard { padding: 20px; }
+    #ncl .ncl-summary { grid-template-columns: 1fr; }
+    #ncl .ncl-progress-label { font-size: .85rem; }
+}
+
+/* ==========================================
+   NATIONAL CYBER LEAGUE SCORECARD
+   ========================================== */
+
+#ncl .ncl-scorecard {
+    background: linear-gradient(
+        135deg,
+        var(--surface),
+        #211622
+    );
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px;
+}
+
+#ncl .section-label {
+    color: var(--gold);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+#ncl h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    margin-bottom: 12px;
+}
+
+#ncl .ncl-subtitle {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin-bottom: 24px;
+}
+
+/* Four statistic cards */
+
+#ncl .ncl-summary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+#ncl .ncl-metric {
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    min-width: 0;
+}
+
+#ncl .ncl-metric strong {
+    display: block;
+    color: var(--gold);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+#ncl .ncl-metric span {
+    display: block;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+/* Performance highlights */
+
+#ncl .ncl-performance {
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+}
+
+#ncl .ncl-performance h3 {
+    color: var(--text);
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+#ncl .ncl-progress {
+    margin-bottom: 18px;
+}
+
+#ncl .ncl-progress-label {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+#ncl .ncl-progress-label span:last-child {
+    color: var(--text);
+    white-space: nowrap;
+}
+
+/* Crimson progress bars */
+
+#ncl .ncl-track {
+    width: 100%;
+    height: 11px;
+    background: var(--purple);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+#ncl .ncl-fill {
+    height: 100%;
+    background: var(--crimson-light);
+    border-radius: 999px;
+}
+
+/* Competition footnote */
+
+#ncl .ncl-footnote {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 24px;
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+
+    #ncl .ncl-scorecard {
+        padding: 22px;
+    }
+
+    #ncl .ncl-summary {
+        grid-template-columns: 1fr;
+    }
+
+    #ncl .ncl-metric {
+        padding: 20px;
+    }
+
+    #ncl .ncl-metric strong {
+        font-size: 2rem;
+    }
+
+    #ncl .ncl-progress-label {
+        font-size: 0.85rem;
+    }
+}
+
+#ncl .ncl-report-link {
+    margin-top: 24px;
+}
+
+#ncl .ncl-report-link a {
+    color: var(--gold);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#ncl .ncl-report-link a:hover {
+    color: var(--crimson-light);
+    text-decoration: underline;
 }
