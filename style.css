@@ -1289,3 +1289,84 @@ footer {
         gap: 36px;
     }
 }
+
+#ncl .ncl-report-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 28px;
+    margin-top: 24px;
+}
+
+#ncl .ncl-report-links a {
+    color: var(--gold);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#ncl .ncl-report-links a:hover {
+    color: var(--crimson-light);
+    text-decoration: underline;
+}
+
+/* NCL medal beside competition heading */
+
+#ncl .ncl-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+#ncl .ncl-card-title {
+    flex: 1;
+    min-width: 0;
+}
+
+#ncl .ncl-card-title h3 {
+    margin-bottom: 8px;
+}
+
+#ncl .ncl-card-header .ncl-subtitle {
+    margin-bottom: 0;
+}
+
+#ncl .ncl-medal-badge {
+    display: block;
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    #ncl .ncl-medal-badge {
+        width: 80px;
+        height: 80px;
+    }
+
+    #ncl .ncl-card-header {
+        gap: 12px;
+    }
+}
+
+/* Center NCL medal over right statistics column */
+
+#ncl .ncl-card-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 16px;
+}
+
+#ncl .ncl-medal-badge {
+    justify-self: center;
+}
+
+#ncl .ncl-team-description {
+    color: #c4b8ca;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 12px 0 20px;
+    max-width: 650px;
+}
